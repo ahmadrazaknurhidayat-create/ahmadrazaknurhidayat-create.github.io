@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from "../components/Hero.astro";
+---
+
+<Layout title="Lembaran Memori">
+  <main style="max-width:1100px;margin:auto;padding:50px 20px;font-family:Arial,sans-serif;">
+
+    <!-- Hero -->
+    <section style="text-align:center;padding:70px 20px;">
+      <h1 style="font-size:48px;margin-bottom:10px;">
+        📚 Lembaran Memori
+      </h1>
+
+      <p style="font-size:20px;color:#666;">
+        Menyimpan perjalanan hidup dalam setiap tulisan.
+      </p>
+
+      <p style="max-width:700px;margin:auto;line-height:1.8;">
+        Selamat datang di website pribadiku.
+        Website ini berisi catatan harian, puisi, tulisan Islami,
+        serta berbagai kenangan dan pengalaman hidup yang ingin
+        kuabadikan dalam bentuk digital.
+      </p>
+
+      <br>
+
+      <a href="/diary"
+      style="background:#2563eb;color:white;padding:12px 24px;border-radius:10px;text-decoration:none;margin-right:10px;">
+      📖 Mulai Membaca
+      </a>
+
+      <a href="/about"
+      style="border:2px solid #2563eb;padding:12px 24px;border-radius:10px;text-decoration:none;">
+      👤 Tentang Saya
+      </a>
+
+    </section>
+
+    <hr>
+
+    <!-- Kategori -->
+
+    <section>
+
+      <h2 align="center">
+        ✨ Kategori Tulisan
+      </h2>
+
+      <div style="display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      margin-top:30px;">
+
+        <div style="padding:20px;border-radius:15px;border:1px solid #ddd;">
+          <h3>📖 Catatan Harian</h3>
+          <p>
+            Perjalanan hidup, pengalaman,
+            dan cerita setiap hari.
+          </p>
+        </div>
+
+        <div style="padding:20px;border-radius:15px;border:1px solid #ddd;">
+          <h3>✍️ Puisi</h3>
+          <p>
+            Kumpulan puisi tentang
+            kehidupan, harapan, dan kerinduan.
+          </p>
+        </div>
+
+        <div style="padding:20px;border-radius:15px;border:1px solid #ddd;">
+          <h3>💙 Lembaran Kenangan</h3>
+          <p>
+            Catatan, surat, dan kenangan
+            yang memiliki arti dalam perjalanan hidup.
+          </p>
+        </div>
+
+        <div style="padding:20px;border-radius:15px;border:1px solid #ddd;">
+          <h3>🕌 Tulisan Islami</h3>
+          <p>
+            Renungan, tafsir, hadis,
+            dan catatan keislaman.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <br><br>
+
+    <hr>
+
+    <!-- Kutipan -->
+
+    <section style="text-align:center;padding:50px 20px;">
+
+      <h2>🌙 Sebuah Kutipan</h2>
+
+      <blockquote style="font-size:22px;font-style:italic;">
+        "Setiap tulisan adalah jejak perjalanan,
+        dan setiap kenangan layak untuk dikenang."
+      </blockquote>
+
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+
+    <footer style="text-align:center;padding:30px;color:gray;">
+
+      © 2026 Ahmad Razak Nur Hidayat
+
+      <br>
+
+      Dibangun menggunakan ❤️ Astro
+
+    </footer>
+
+  </main>
+</Layout>

@@ -1,0 +1,61 @@
+<div class="clock">
+  <div id="greeting">Memuat...</div>
+  <div id="datetime"></div>
+</div>
+
+<script is:inline>
+  function updateClock() {
+    const greeting = document.getElementById("greeting");
+    const datetime = document.getElementById("datetime");
+
+    if (!greeting || !datetime) return;
+
+    const now = new Date();
+
+    const hour = now.getHours();
+
+    let greet = "🌙 Selamat Malam";
+
+    if (hour >= 5 && hour < 11) {
+      greet = "🌅 Selamat Pagi";
+    } else if (hour >= 11 && hour < 15) {
+      greet = "☀️ Selamat Siang";
+    } else if (hour >= 15 && hour < 18) {
+      greet = "🌇 Selamat Sore";
+    }
+
+    const date = now.toLocaleDateString("id-ID", {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    });
+
+    const time = now.toLocaleTimeString("id-ID");
+
+    greeting.textContent = greet;
+    datetime.textContent = `📅 ${date} | 🕒 ${time}`;
+  }
+
+  updateClock();
+  setInterval(updateClock, 1000);
+</script>
+
+<style>
+.clock{
+  margin:20px 0;
+  text-align:center;
+}
+
+#greeting{
+  font-size:22px;
+  font-weight:bold;
+  color:#fde68a;
+}
+
+#datetime{
+  margin-top:8px;
+  color:white;
+  font-size:16px;
+}
+</style>

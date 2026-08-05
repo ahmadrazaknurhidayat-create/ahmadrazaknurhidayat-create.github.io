@@ -1,0 +1,120 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Tentang Saya">
+
+  <section class="about">
+
+    <div class="about-card">
+
+      <h1>Tentang Saya</h1>
+
+      <p class="intro">
+        Marhaban Fiikum di <strong>Lembaran Memori</strong>.
+      </p>
+
+      <p>
+        Sebuah ruang sederhana untuk menyimpan cerita,
+        catatan perjalanan, puisi, refleksi, dan kenangan
+        yang memiliki makna dalam kehidupan.
+      </p>
+
+      <p>
+        Website ini dibuat sebagai tempat untuk mengabadikan
+        berbagai momen, pemikiran, dan pengalaman melalui tulisan.
+      </p>
+
+      <div class="quote">
+        "Karena setiap perjalanan memiliki cerita,
+        dan setiap cerita layak untuk dikenang."
+      </div>
+
+      <h2>Tentang Pembuat</h2>
+
+      <p>
+        Saya adalah seseorang yang menikmati proses belajar,
+        menulis, berbagi cerita, dan menyimpan perjalanan
+        kehidupan melalui tulisan.
+      </p>
+
+      <p>
+        Melalui Lembaran Memori, saya ingin membuat tempat
+        untuk menyimpan catatan harian, refleksi, dan berbagai
+        kenangan yang berharga.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <style>
+
+    .about {
+      min-height: 80vh;
+      padding: 60px 20px;
+      background: #f8fafc;
+    }
+
+    .about-card {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 45px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      color: #1e3a8a;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #374151;
+    }
+
+    .quote {
+      margin: 35px 0;
+      padding: 25px;
+      background: #eff6ff;
+      border-left: 5px solid #2563eb;
+      color: #1e3a8a;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      margin-top: 40px;
+    }
+
+
+    @media(max-width:768px){
+
+      .about-card {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+    }
+
+  </style>
+
+</Layout>
