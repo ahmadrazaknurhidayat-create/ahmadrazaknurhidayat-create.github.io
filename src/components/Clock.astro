@@ -1,5 +1,5 @@
 <div class="clock">
-  <div id="greeting">Memuat...</div>
+  <div id="greeting">📚 Every memory deserves its own page.</div>
   <div id="datetime"></div>
 </div>
 
@@ -31,10 +31,14 @@
       year: "numeric"
     });
 
-    const time = now.toLocaleTimeString("id-ID");
+    const time = now.toLocaleTimeString("id-ID", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
 
     greeting.textContent = greet;
-    datetime.textContent = `📅 ${date} | 🕒 ${time}`;
+    datetime.textContent = `📅 ${date} | 🕒 ${time} WIT`;
   }
 
   updateClock();
