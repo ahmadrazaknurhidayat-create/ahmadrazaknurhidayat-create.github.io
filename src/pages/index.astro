@@ -1,3 +1,4 @@
+```astro
 ---
 import Layout from "../layouts/Layout.astro";
 
@@ -9,6 +10,7 @@ import Quote from "../components/Quote.astro";
 import Footer from "../components/Footer.astro";
 import Stats from "../components/Stats.astro";
 import FeaturedPost from "../components/FeaturedPost.astro";
+
 import "../styles/home.css";
 ---
 
@@ -22,24 +24,33 @@ import "../styles/home.css";
     <!-- Search -->
     <SearchBar />
 
+
+    <!-- Featured Post -->
     <FeaturedPost
-  title="Lembaran Pertama"
-  date="6 Agustus 2026"
-  description="Hari ini aku memulai lembaran pertama di website Lembaran Memori. Sebuah tempat untuk menyimpan cerita, perjalanan, dan kenangan yang berharga."
-  href="/diary/cecilia/catatan/2026-08-06-lembaran-pertama"
-/>
+      title="Lembaran Pertama"
+      date="6 Agustus 2026"
+      description="Hari ini aku memulai lembaran pertama di website Lembaran Memori. Sebuah tempat untuk menyimpan cerita, perjalanan, dan kenangan yang berharga."
+      image="/images/featured-default.jpg"
+      href="/diary/cecilia/catatan/2026-08-06-lembaran-pertama"
+    />
+
+
     <!-- Kategori -->
     <Categories />
 
+
     <!-- Catatan Terbaru -->
     <LatestPosts />
+
 
     <!-- Quote -->
     <Quote />
 
   </main>
 
+
   <!-- Footer -->
   <Footer />
 
 </Layout>
+```

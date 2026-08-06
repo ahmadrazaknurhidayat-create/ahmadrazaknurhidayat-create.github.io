@@ -1,17 +1,21 @@
+```css id="c3nqf9"
 .latest-posts{
     padding:80px 20px;
 }
+
 
 .section-header{
     text-align:center;
     margin-bottom:50px;
 }
 
+
 .section-header h2{
     font-size:2.2rem;
     color:#1e3a8a;
     margin-bottom:10px;
 }
+
 
 .section-header p{
     color:#64748b;
@@ -20,28 +24,92 @@
     line-height:1.8;
 }
 
+
 .latest-posts-grid{
+
     display:grid;
+
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
     gap:30px;
+
 }
+
+
+/* Efek kartu */
+.latest-posts-grid :global(.card){
+
+    transition:.3s;
+
+}
+
+
+.latest-posts-grid :global(.card:hover){
+
+    transform:translateY(-8px);
+
+}
+
 
 .latest-posts-footer{
+
     text-align:center;
+
     margin-top:45px;
+
 }
+
 
 .view-all{
+
     display:inline-block;
+
     background:#2563eb;
+
     color:white;
+
     padding:14px 26px;
+
     border-radius:999px;
+
     text-decoration:none;
+
     transition:.3s;
+
 }
 
+
 .view-all:hover{
+
     background:#1d4ed8;
+
     transform:translateY(-4px);
+
 }
+
+
+
+@media(max-width:768px){
+
+    .latest-posts{
+
+        padding:60px 20px;
+
+    }
+
+
+    .section-header h2{
+
+        font-size:1.8rem;
+
+    }
+
+
+    .latest-posts-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+```

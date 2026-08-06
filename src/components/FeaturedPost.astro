@@ -14,7 +14,7 @@ const {
   date,
   description,
   href,
-  image = "/images/featured-default.jpg"
+  image
 } = Astro.props;
 ---
 
@@ -23,8 +23,12 @@ const {
   <div class="featured-container">
 
     <div class="featured-image">
-      <img src={image} alt={title} />
+      <img 
+        src={image} 
+        alt={title}
+      />
     </div>
+
 
     <div class="featured-content">
 

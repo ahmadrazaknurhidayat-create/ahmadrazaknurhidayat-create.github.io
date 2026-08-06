@@ -1,3 +1,4 @@
+```astro
 ---
 import "../styles/cards.css";
 
@@ -27,16 +28,20 @@ const {
 
   {image && (
     <div class="card-image-wrapper">
+
       <img
         src={image}
-        alt={title}
+        alt={`Gambar ${title}`}
         class="card-image"
         loading="lazy"
       />
+
     </div>
   )}
 
+
   <div class="card-content">
+
 
     {date && (
       <p class="card-date">
@@ -44,22 +49,34 @@ const {
       </p>
     )}
 
-    <div class="card-icon">
+
+    <div class="card-icon" aria-hidden="true">
       {icon}
     </div>
 
+
     <h2 class="card-title">
-      {title}
+      <a href={href}>
+        {title}
+      </a>
     </h2>
+
 
     <p class="card-description">
       {description}
     </p>
 
-    <a href={href} class="card-button">
+
+    <a 
+      href={href} 
+      class="card-button"
+      aria-label={`Membuka ${title}`}
+    >
       {buttonText}
     </a>
+
 
   </div>
 
 </article>
+```
