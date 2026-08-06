@@ -4,16 +4,110 @@ import Layout from "../../../../layouts/Layout.astro";
 
 <Layout title="Catatan Harian">
 
-<h1>📖 Catatan Harian</h1>
+<section class="diary-page">
 
-<p>
-Semua catatan harian untuk Kak Cecilia.
-</p>
+  <h1>📖 Catatan Harian</h1>
 
-<hr>
+  <p class="intro">
+    Halaman ini berisi kumpulan catatan harian yang kutulis untuk
+    mengenang berbagai momen, perjalanan, dan cerita bersama Kak Cecilia.
+    Setiap lembar menjadi bagian dari perjalanan yang ingin kusimpan
+    agar dapat kubaca kembali di masa mendatang.
+  </p>
 
-<a href="/diary/cecilia/catatan/2026-08-06-lembaran-pertama">
-  📅 6 Agustus 2026 — Lembaran Pertama
-</a>
+  <div class="diary-list">
+
+    <a
+      href="/diary/cecilia/catatan/2026-08-06-lembaran-pertama"
+      class="card">
+
+      <p class="date">
+        📅 6 Agustus 2026
+      </p>
+
+      <h2>
+        Lembaran Pertama
+      </h2>
+
+      <p>
+        Catatan pertama yang kutulis di Lembaran Memori.
+        Sebuah awal untuk menyimpan kenangan, cerita,
+        dan perjalanan yang berharga.
+      </p>
+
+      <span class="read-more">
+        📖 Baca Selengkapnya →
+      </span>
+
+    </a>
+
+  </div>
+
+</section>
+
+<style>
+
+.diary-page{
+  max-width:900px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+.diary-page h1{
+  text-align:center;
+  color:#1e40af;
+  margin-bottom:15px;
+}
+
+.intro{
+  text-align:center;
+  color:#64748b;
+  line-height:1.8;
+  margin-bottom:40px;
+}
+
+.diary-list{
+  display:grid;
+  gap:20px;
+}
+
+.card{
+  display:block;
+  background:#fff;
+  padding:25px;
+  border-radius:18px;
+  text-decoration:none;
+  color:#1e293b;
+  border-left:5px solid #2563eb;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.date{
+  color:#64748b;
+  margin-bottom:10px;
+}
+
+.card h2{
+  margin:0 0 12px;
+  color:#1e40af;
+}
+
+.card p{
+  line-height:1.7;
+}
+
+.read-more{
+  display:inline-block;
+  margin-top:18px;
+  color:#2563eb;
+  font-weight:bold;
+}
+
+</style>
 
 </Layout>
