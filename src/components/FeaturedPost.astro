@@ -1,0 +1,53 @@
+---
+import "../styles/featured-post.css";
+
+interface Props {
+  title: string;
+  date: string;
+  description: string;
+  href: string;
+  image?: string;
+}
+
+const {
+  title,
+  date,
+  description,
+  href,
+  image = "/images/featured-default.jpg"
+} = Astro.props;
+---
+
+<section class="featured-post">
+
+  <div class="featured-container">
+
+    <div class="featured-image">
+      <img src={image} alt={title} />
+    </div>
+
+    <div class="featured-content">
+
+      <span class="badge">
+        🌟 Lembaran Terbaru
+      </span>
+
+      <p class="date">
+        📅 {date}
+      </p>
+
+      <h2>{title}</h2>
+
+      <p class="description">
+        {description}
+      </p>
+
+      <a href={href} class="button">
+        📖 Baca Lembaran →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
