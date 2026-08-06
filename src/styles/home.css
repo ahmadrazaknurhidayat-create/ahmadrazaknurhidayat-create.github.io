@@ -1,0 +1,13 @@
+.home section{
+  margin:100px 0;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    gap:90px;
+}
+
+section{
+    padding:20px 0;
+}

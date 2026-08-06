@@ -1,0 +1,8 @@
+.diary-page{
+  padding:80px 20px;
+}
+
+.diary-grid{
+  display:grid;
+  gap:25px;
+}

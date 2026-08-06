@@ -1,5 +1,5 @@
 ---
-import "../styles/card.css";
+import "../styles/cards.css";
 
 interface Props {
   title: string;
@@ -17,17 +17,15 @@ const {
   href,
   image,
   icon = "📖"
-} = Astro.props;
+}: Props = Astro.props;
 ---
 
 <article class="card">
-
   {image && (
     <img src={image} alt={title} class="card-image" />
   )}
 
   <div class="card-content">
-
     {date && <p class="card-date">📅 {date}</p>}
 
     <h2>{icon} {title}</h2>
@@ -37,7 +35,5 @@ const {
     <a href={href} class="card-button">
       📖 Buka Lembaran →
     </a>
-
   </div>
-
 </article>
