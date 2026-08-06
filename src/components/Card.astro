@@ -3,37 +3,63 @@ import "../styles/cards.css";
 
 interface Props {
   title: string;
-  date?: string;
   description: string;
   href: string;
+
+  date?: string;
   image?: string;
   icon?: string;
+  buttonText?: string;
 }
 
 const {
   title,
-  date,
   description,
   href,
+  date,
   image,
-  icon = "📖"
+  icon = "📖",
+  buttonText = "📖 Buka Lembaran →"
 }: Props = Astro.props;
 ---
 
 <article class="card">
+
   {image && (
-    <img src={image} alt={title} class="card-image" />
+    <div class="card-image-wrapper">
+      <img
+        src={image}
+        alt={title}
+        class="card-image"
+        loading="lazy"
+      />
+    </div>
   )}
 
   <div class="card-content">
-    {date && <p class="card-date">📅 {date}</p>}
 
-    <h2>{icon} {title}</h2>
+    {date && (
+      <p class="card-date">
+        📅 {date}
+      </p>
+    )}
 
-    <p>{description}</p>
+    <div class="card-icon">
+      {icon}
+    </div>
+
+    <h2 class="card-title">
+      {title}
+    </h2>
+
+    <p class="card-description">
+      {description}
+    </p>
 
     <a href={href} class="card-button">
-      📖 Buka Lembaran →
+      {buttonText}
     </a>
+
   </div>
+
 </article>

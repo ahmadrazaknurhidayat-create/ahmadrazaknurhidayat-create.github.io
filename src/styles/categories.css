@@ -1,11 +1,27 @@
 .categories{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
+    padding:80px 20px;
 }
 
-.category{
-  padding:12px 22px;
-  border-radius:999px;
+.section-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-header h2{
+    font-size:38px;
+    color:#1e3a8a;
+    margin-bottom:12px;
+}
+
+.section-header p{
+    max-width:650px;
+    margin:auto;
+    color:#64748b;
+    line-height:1.8;
+}
+
+.categories-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }

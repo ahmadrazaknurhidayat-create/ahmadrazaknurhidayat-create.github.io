@@ -1,0 +1,47 @@
+---
+import Card from "./Card.astro";
+import "../styles/categories.css";
+---
+
+<section class="categories">
+
+  <div class="section-header">
+    <h2>✨ Jelajahi Kategori</h2>
+    <p>
+      Pilih kategori yang ingin kamu baca dan jelajahi berbagai lembaran cerita.
+    </p>
+  </div>
+
+  <div class="categories-grid">
+
+    <Card
+      icon="📖"
+      title="Catatan Harian"
+      description="Perjalanan hidup, pengalaman, dan cerita setiap hari."
+      href="/diary"
+    />
+
+    <Card
+      icon="✍️"
+      title="Puisi"
+      description="Kumpulan puisi tentang kehidupan, harapan, dan kerinduan."
+      href="/puisi"
+    />
+
+    <Card
+      icon="💙"
+      title="Lembaran Kenangan"
+      description="Surat, catatan, dan kenangan yang memiliki arti dalam perjalanan hidup."
+      href="/kenangan"
+    />
+
+    <Card
+      icon="🕌"
+      title="Tulisan Islami"
+      description="Renungan, tafsir, hadis, dan catatan keislaman."
+      href="/islami"
+    />
+
+  </div>
+
+</section>

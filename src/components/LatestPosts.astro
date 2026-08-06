@@ -1,0 +1,38 @@
+---
+import Card from "./Card.astro";
+import "../styles/latest-posts.css";
+---
+
+<section class="latest-posts">
+
+  <div class="section-header">
+    <h2>📚 Catatan Terbaru</h2>
+
+    <p>
+      Tulisan-tulisan terbaru yang telah diabadikan
+      dalam Lembaran Memori.
+    </p>
+  </div>
+
+  <div class="latest-posts-grid">
+
+    <Card
+      icon="📖"
+      title="Lembaran Pertama"
+      date="6 Agustus 2026"
+      description="Hari ini aku memulai lembaran pertama di website Lembaran Memori. Sebuah awal untuk menyimpan cerita, kenangan, dan perjalanan hidup."
+      href="/diary/cecilia/catatan/2026-08-06-lembaran-pertama/"
+      buttonText="📖 Baca Lembaran →"
+    />
+
+  </div>
+
+  <div class="latest-posts-footer">
+
+    <a href="/diary" class="view-all">
+      📚 Lihat Semua Catatan →
+    </a>
+
+  </div>
+
+</section>
